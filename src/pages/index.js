@@ -6,8 +6,13 @@ import { graphql } from "gatsby";
 
 import "../styles/index.scss";
 import { useRobotLabWorkshopSlidesURL } from "../hooks/robotlab-workshop-slides";
-import {useRoboConPresentationSlidesURL} from "../hooks/robocon-presentation-slides";
-import {MdArchive, MdLink, MdPictureAsPdf} from "react-icons/md";
+import { useRoboConPresentationSlidesURL } from "../hooks/robocon-presentation-slides";
+import {
+  MdArchive,
+  MdFileDownload,
+  MdLink,
+  MdPictureAsPdf
+} from "react-icons/md";
 
 const IndexPage = ({ location, data }) => {
   const { file, site } = data;
@@ -15,37 +20,56 @@ const IndexPage = ({ location, data }) => {
     <>
       <Helmet title={site.siteMetadata.title} />
       <div className="jumbotron jumbotron-fluid bg-primary text-white d-flex flex-row justify-content-center align-content-center">
-        <Img className="px-4" fixed={file.childImageSharp.fixed}
-        title="robots-from-jupyter.github.io"/>
-        <h1 className="d-none d-md-flex display-4 px-4 flex-column justify-content-center" style={{ maxWidth: '50%'}}>robots-from-jupyter.github.io</h1>
+        <Img
+          className=""
+          fixed={file.childImageSharp.fixed}
+          title="robots-from-jupyter.github.io"
+        />
+        <h1
+          className="d-none d-md-flex display-4 px-4 flex-column justify-content-center"
+          style={{ maxWidth: "50%" }}
+        >
+          robots-from-jupyter.github.io
+        </h1>
       </div>
-      <div
-        className="d-flex flex-column align-items-center justify-content-center"
-      >
-        <div className="text-primary px-4">
-          <h2 className="text-primary mb-4">Deliverables</h2>
-        <h3>
-          <span className="badge badge-primary mr-4">16.1.2019</span>
-          <a href={useRobotLabWorkshopSlidesURL()}>Workshop <MdPictureAsPdf /></a>
-        </h3>
-          <div className="list-group list-group-flush">
-          <a
-            href="https://github.com/robots-from-jupyter/robotlab/releases
+      <div className="container">
+        <div className="row">
+          <div className="media mx-auto">
+            <MdFileDownload
+              className="d-none d-md-block text-primary mr-3"
+              style={{ height: 200, width: 200 }}
+            />
+            <div className="media-body">
+              <div className="list-group list-group-flush">
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href={useRobotLabWorkshopSlidesURL()}
+                >
+                  RoboCon 2019 Workshop Slides
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href="https://github.com/robots-from-jupyter/robotlab/releases
 "
-          className="list-group-item list-group-item-action text-primary">
-            RobotLab installer <MdLink />
-          </a>
+                >
+                  RobotLab installer
+                </a>
 
-            <a href="https://github.com/robots-from-jupyter/robotkernel/archive/master.zip" className="list-group-item list-group-item-action text-primary">
-              RobotKernel notebooks <MdArchive />
-            </a>
-        </div>
-        <h3>
-          <span className="badge badge-primary mr-4">17.1.2019</span>
-          <a href={useRoboConPresentationSlidesURL()}>
-            Presentation <MdPictureAsPdf />
-          </a>
-        </h3>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href="https://github.com/robots-from-jupyter/robotkernel/archive/master.zip"
+                >
+                  RobotKernel notebooks
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href={useRoboConPresentationSlidesURL()}
+                >
+                  RoboCon 2019 Presentation
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -1,7 +1,11 @@
 @import "~bootstrap/scss/functions";
 
 $primary: #f46524;
+
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$enable-rounded: false;
+$list-group-border-color: lighten($primary, 25);
 
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
