@@ -2,3 +2,63 @@
 
 @import "./variables";
 @import "./bootstrap";
+
+@import "~slick-carousel/slick/slick.css";
+
+$carousel-control-color: transparent;
+$carousel-control-opacity: 0;
+$carousel-control-hover-opacity: 0.5;
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  position: absolute;
+  border: none;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  // Use flex for alignment (1-3)
+  display: flex; // 1. allow flex styles
+  align-items: center; // 2. vertically center contents
+  justify-content: center; // 3. horizontally center contents
+
+  width: $carousel-control-width;
+  color: $carousel-control-color;
+  text-align: center;
+  opacity: $carousel-control-opacity;
+  @include transition($carousel-control-transition);
+
+  // Hover/focus state
+  @include hover-focus {
+    color: $carousel-control-color;
+    text-decoration: none;
+    outline: 0;
+    opacity: $carousel-control-hover-opacity;
+    background-color: $primary;
+  }
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  display: inline-block;
+  width: $carousel-control-icon-width;
+  padding: 0 40px;
+  height: auto;
+  background: no-repeat 50% / 100% 10%;
+}
+
+.slick-arrow.slick-prev {
+  background-image: $carousel-control-prev-icon-bg;
+}
+
+.slick-arrow.slick-next {
+  background-image: $carousel-control-next-icon-bg;
+}
