@@ -1,14 +1,13 @@
 import Helmet from "react-helmet";
 import React from "react";
 import Img from "gatsby-image";
-import Slider from "react-slick";
 
-import { graphql } from "gatsby";
+import {graphql} from "gatsby";
 
 import "../styles/index.scss";
-import { useRobotLabWorkshopSlidesURL } from "../hooks/robotlab-workshop-slides";
-import { useRoboConPresentationSlidesURL } from "../hooks/robocon-presentation-slides";
-import { MdFileDownload } from "react-icons/md";
+import {useRobotLabWorkshopSlidesURL} from "../hooks/robotlab-workshop-slides";
+import {useRoboConPresentationSlidesURL} from "../hooks/robocon-presentation-slides";
+import {MdFileDownload} from "react-icons/md";
 import YouTube from "react-youtube";
 
 const IndexPage = ({ location, data }) => {
@@ -69,51 +68,10 @@ const IndexPage = ({ location, data }) => {
           </div>
         </div>
       </div>
-      <div className="d-md-none container-fluid bg-primary mt-4 py-4">
-        <div className="row" style={{ overflow: "hidden" }}>
-          <div className="mx-auto" style={{ width: 320 }}>
-            <Slider
-              slidesToShow={1}
-              slidesToScroll={1}
-              dots={false}
-              variableWidth={true}
-              lazyLoad="progressive"
-            >
-              <YouTube
-                videoId="uYGh9_c3b7s"
-                opts={{ width: "320", height: "180" }}
-              />
-              <YouTube
-                videoId="I0itWfQWnB8"
-                opts={{ width: "320", height: "180" }}
-              />
-              <YouTube
-                videoId="Ga0-DetQdjg"
-                opts={{ width: "320", height: "180" }}
-              />
-              <YouTube
-                videoId="oBsgU3jdTT0"
-                opts={{ width: "320", height: "180" }}
-              />
-            </Slider>
-          </div>
-        </div>
-      </div>
       <div className="d-none d-md-block container-fluid bg-primary mt-4 py-4">
         <div className="row" style={{ overflow: "hidden" }}>
           <div className="mx-auto" style={{ width: 640 }}>
-            <Slider
-              slidesToShow={1}
-              slidesToScroll={1}
-              dots={false}
-              variableWidth={true}
-              lazyLoad="progressive"
-            >
               <YouTube videoId="uYGh9_c3b7s" />
-              <YouTube videoId="I0itWfQWnB8" />
-              <YouTube videoId="Ga0-DetQdjg" />
-              <YouTube videoId="oBsgU3jdTT0" />
-            </Slider>
           </div>
         </div>
       </div>
