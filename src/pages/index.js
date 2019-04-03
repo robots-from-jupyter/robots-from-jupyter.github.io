@@ -39,29 +39,38 @@ const IndexPage = ({ location, data }) => {
               <div className="list-group list-group-flush">
                 <a
                   className="list-group-item list-group-item-action text-primary"
+                  href="https://github.com/robots-from-jupyter/robotlab/releases"
+                  title="RobotLab release downloads"
+                >
+                  RobotLab release downloads
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href="https://github.com/robots-from-jupyter/robotkernel/tree/master/docs/notebooks"
+                  title="RobotKenel example notebooks"
+                >
+                  RobotKernel example notebooks
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href="https://robots-from-jupyter.github.io/robotkernel/"
+                  title="RobotKernel documentation"
+                >
+                  RobotKernel documentation
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
                   href={useRobotLabWorkshopSlidesURL()}
+                  title="RoboCon 2019 Workshop Slides"
                 >
                   RoboCon 2019 Workshop Slides
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
-                  href="https://github.com/robots-from-jupyter/robotlab/releases
-"
-                >
-                  RobotLab installer
-                </a>
-
-                <a
-                  className="list-group-item list-group-item-action text-primary"
-                  href="https://github.com/robots-from-jupyter/robotkernel/archive/master.zip"
-                >
-                  RobotKernel notebooks
-                </a>
-                <a
-                  className="list-group-item list-group-item-action text-primary"
                   href={useRoboConPresentationSlidesURL()}
+                  title="RoboCon 2019 Presentation Slides"
                 >
-                  RoboCon 2019 Presentation
+                  RoboCon 2019 Presentation Slides
                 </a>
               </div>
             </div>
