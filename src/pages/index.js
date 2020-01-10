@@ -45,15 +45,21 @@ const IndexPage = ({ location, data }) => {
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
-                  href="https://github.com/robots-from-jupyter/robotkernel/tree/master/docs/notebooks"
+                  href="https://mybinder.org/v2/gh/robots-from-jupyter/robotkernel/master?urlpath=lab/tree/starter/robotkernel-quickstart"
                 >
-                  RobotKernel example notebooks
+                  RobotKernel Quick Start with Binder
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
                   href="https://robots-from-jupyter.github.io/robotkernel/"
                 >
                   RobotKernel documentation
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href={"robocon2020"}
+                >
+                  RoboCon 2020 Workshop Slides
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
