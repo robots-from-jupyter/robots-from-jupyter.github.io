@@ -40,35 +40,30 @@ const IndexPage = ({ location, data }) => {
                 <a
                   className="list-group-item list-group-item-action text-primary"
                   href="https://github.com/robots-from-jupyter/robotlab/releases"
-                  title="RobotLab release downloads"
                 >
                   RobotLab release downloads
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
                   href="https://github.com/robots-from-jupyter/robotkernel/tree/master/docs/notebooks"
-                  title="RobotKenel example notebooks"
                 >
                   RobotKernel example notebooks
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
                   href="https://robots-from-jupyter.github.io/robotkernel/"
-                  title="RobotKernel documentation"
                 >
                   RobotKernel documentation
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
                   href={useRobotLabWorkshopSlidesURL()}
-                  title="RoboCon 2019 Workshop Slides"
                 >
                   RoboCon 2019 Workshop Slides
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
                   href={useRoboConPresentationSlidesURL()}
-                  title="RoboCon 2019 Presentation Slides"
                 >
                   RoboCon 2019 Presentation Slides
                 </a>
