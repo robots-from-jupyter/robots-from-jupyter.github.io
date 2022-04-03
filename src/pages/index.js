@@ -51,7 +51,13 @@ const IndexPage = ({ location, data }) => {
                 </a>
                 <a
                   className="list-group-item list-group-item-action text-primary"
-                  href="https://robots-from-jupyter.github.io/robotkernel/"
+                  href="https://robotkernel.readthedocs.io/en/latest/_/lab/index.html?path=Example.ipynb&room="
+                >
+                  RobotKernel (lite) with JupyterLite
+                </a>
+                <a
+                  className="list-group-item list-group-item-action text-primary"
+                  href="https://robotkernel.readthedocs.io/"
                 >
                   RobotKernel documentation
                 </a>
