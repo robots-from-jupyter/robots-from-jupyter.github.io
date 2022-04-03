@@ -59,7 +59,7 @@
     "react-icons": "^3.8.0"
   },
   "dependencies": {
-    "react-dev-utils": "^10.0.0",
+    "react-dev-utils": "^11.0.4",
     "react-slick": "^0.25.2",
     "react-youtube": "^7.9.0",
     "slick-carousel": "^1.8.1"
